@@ -1,2 +1,7 @@
 2023/06/21 01:50:57 main.go:15: test
 2023/06/21 01:51:16 main.go:15: test
+2023/06/21 12:51:30 todos.go:23: table todos has no column named user_id
+2023/06/21 12:53:14 todos.go:23: table todos has no column named user_id
+2023/06/21 12:54:57 todos.go:23: table todos has no column named user_id
+2023/06/22 15:39:26 todos.go:23: table todos has no column named user_id
+2023/06/22 15:41:11 todos.go:23: table todos has no column named user_id

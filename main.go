@@ -24,17 +24,20 @@ func main() {
 	// u.CreateUser()
 
 	// ユーザーの取得
-	u, _ := models.GetUser(1)
-	fmt.Println(u)
+	// u, _ := models.GetUser(1)
+	// fmt.Println(u)
 
-	// ユーザーの更新
-	u.Name = "test2"
-	u.Email = "test2@example.com"
-	u.UpdateUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	// // ユーザーの更新
+	// u.Name = "test2"
+	// u.Email = "test2@example.com"
+	// u.UpdateUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
 
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	// u.DeleteUser()
+	// u, _ = models.GetUser(1)
+	// fmt.Println(u)
+
+	user, _ := models.GetUser(2)
+	user.CreateTodo("First Todo")
 }
