@@ -34,10 +34,37 @@ func main() {
 	// u, _ = models.GetUser(1)
 	// fmt.Println(u)
 
+	// ユーザーの削除
 	// u.DeleteUser()
 	// u, _ = models.GetUser(1)
 	// fmt.Println(u)
 
-	user, _ := models.GetUser(2)
-	user.CreateTodo("First Todo")
+	// todoの作成
+	// user, _ := models.GetUser(3)
+	// user.CreateTodo("Third Todo")
+
+	// todoの取得
+	// t, _ := models.GetTodo(1)
+	// fmt.Println(t)
+
+	// todosの取得
+	// todos, _ := models.GetTodos()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+
+	// userごとのtodos取得
+	// user2, _ := models.GetUser(3)
+	// todos, _ := user2.GetTodosByUser()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+
+	// todoの更新
+	// t, _ := models.GetTodo(1)
+	// t.Content = "Update Todo"
+	// t.UpdateTodo()
+
+	t, _ := models.GetTodo(3)
+	t.DeleteTodo()
 }
