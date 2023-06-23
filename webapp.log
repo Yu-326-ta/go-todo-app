@@ -5,3 +5,533 @@
 2023/06/21 12:54:57 todos.go:23: table todos has no column named user_id
 2023/06/22 15:39:26 todos.go:23: table todos has no column named user_id
 2023/06/22 15:41:11 todos.go:23: table todos has no column named user_id
+2023/06/23 14:16:36 server.go:3217: http: panic serving [::1]:57139: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x1400009b710})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018a000}, {0x0, 0x0}, {0x140000bb9f8?, 0x3, 0x140000bba08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018a000?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x140000bbad8?, {0x1028fc9d0?, 0x1400018a000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018a000}, 0x140000f0200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000102030?}, {0x1028fc9d0, 0x1400018a000}, 0x140000f0200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa090, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:36 server.go:3217: http: panic serving [::1]:57140: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x1400009b9b0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018a1c0}, {0x0, 0x0}, {0x140000bd9f8?, 0x3, 0x140000bda08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018a1c0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x140000bdad8?, {0x1028fc9d0?, 0x1400018a1c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018a1c0}, 0x140000f0300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009b440?}, {0x1028fc9d0, 0x1400018a1c0}, 0x140000f0300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa120, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:36 server.go:3217: http: panic serving [::1]:57141: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000102a20})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x140001162a0}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x1400005ba08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x140001162a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1028fc9d0?, 0x140001162a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x140001162a0}, 0x140000f0400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009bad0?}, {0x1028fc9d0, 0x140001162a0}, 0x140000f0400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa2d0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:37 server.go:3217: http: panic serving [::1]:57142: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000102d50})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x14000116460}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x1400005ba08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x14000116460?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1028fc9d0?, 0x14000116460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x14000116460}, 0x14000106300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000102a80?}, {0x1028fc9d0, 0x14000116460}, 0x14000106300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206120, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:43 server.go:3217: http: panic serving [::1]:57143: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x1400009be60})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018a460}, {0x0, 0x0}, {0x1400024c9f8?, 0x3, 0x1400024ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018a460?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400024cad8?, {0x1028fc9d0?, 0x1400018a460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018a460}, 0x14000202200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002001e0?}, {0x1028fc9d0, 0x1400018a460}, 0x14000202200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002061b0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:43 server.go:3217: http: panic serving [::1]:57144: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d4180})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018a700}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018a700?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400018a700?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018a700}, 0x140000f0500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009bb90?}, {0x1028fc9d0, 0x1400018a700}, 0x140000f0500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa360, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:43 server.go:3217: http: panic serving [::1]:57145: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d4510})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018a9a0}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018a9a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400018a9a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018a9a0}, 0x140000f0600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d4240?}, {0x1028fc9d0, 0x1400018a9a0}, 0x140000f0600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa630, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:44 server.go:3217: http: panic serving [::1]:57146: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000103140})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x14000116620}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x14000116620?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x14000116620?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x14000116620}, 0x140000f0700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d4570?}, {0x1028fc9d0, 0x14000116620}, 0x140000f0700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108510, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:49 server.go:3217: http: panic serving [::1]:57147: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140002004b0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a0e0}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x1400005ba08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a0e0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1028fc9d0?, 0x1400021a0e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a0e0}, 0x14000106400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000102e70?}, {0x1028fc9d0, 0x1400021a0e0}, 0x14000106400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001085a0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:49 server.go:3217: http: panic serving [::1]:57148: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140002007b0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a2a0}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a2a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400021a2a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a2a0}, 0x14000106500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103200?}, {0x1028fc9d0, 0x1400021a2a0}, 0x14000106500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108750, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:16:49 server.go:3217: http: panic serving [::1]:57149: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d4900})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018ab60}, {0x0, 0x0}, {0x1400024c9f8?, 0x3, 0x1400024ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018ab60?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400024cad8?, {0x1028fc9d0?, 0x1400018ab60?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018ab60}, 0x140000f0800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d4630?}, {0x1028fc9d0, 0x1400018ab60}, 0x140000f0800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fa7e0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:17:38 server.go:3217: http: panic serving [::1]:57150: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000103680})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x140001167e0}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x140001167e0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x140001167e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x140001167e0}, 0x14000106700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103380?}, {0x1028fc9d0, 0x140001167e0}, 0x14000106700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001087e0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:17:39 server.go:3217: http: panic serving [::1]:57151: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000200ba0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a460}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x1400005aa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a460?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1028fc9d0?, 0x1400021a460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a460}, 0x14000106600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103320?}, {0x1028fc9d0, 0x1400021a460}, 0x14000106600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108870, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:17:39 server.go:3217: http: panic serving [::1]:57152: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d4bd0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018ad20}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018ad20?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400018ad20?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018ad20}, 0x14000202300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002008d0?}, {0x1028fc9d0, 0x1400018ad20}, 0x14000202300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206480, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:17:39 server.go:3217: http: panic serving [::1]:57153: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000103a10})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x140001169a0}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x140001169a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x140001169a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x140001169a0}, 0x14000106800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103740?}, {0x1028fc9d0, 0x140001169a0}, 0x14000106800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108a20, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:19 server.go:3217: http: panic serving [::1]:57154: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000103e60})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x14000116b60}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x14000116b60?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x14000116b60?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x14000116b60}, 0x14000106900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103ad0?}, {0x1028fc9d0, 0x14000116b60}, 0x14000106900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108bd0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:19 server.go:3217: http: panic serving [::1]:57155: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000200e70})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a620}, {0x0, 0x0}, {0x140000609f8?, 0x3, 0x14000060a08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a620?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x1028fc9d0?, 0x1400021a620?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a620}, 0x14000106a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103b90?}, {0x1028fc9d0, 0x1400021a620}, 0x14000106a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000108c60, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:19 server.go:3217: http: panic serving [::1]:57156: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d4f60})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018aee0}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018aee0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400018aee0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018aee0}, 0x140000f0900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d4c90?}, {0x1028fc9d0, 0x1400018aee0}, 0x140000f0900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000faab0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:20 server.go:3217: http: panic serving [::1]:57157: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140002e21b0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x14000116d20}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x14000116d20?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x14000116d20?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x14000116d20}, 0x14000106c00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000103ec0?}, {0x1028fc9d0, 0x14000116d20}, 0x14000106c00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000fac60, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:25 server.go:3217: http: panic serving [::1]:57158: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140002e2480})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x14000116ee0}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x14000116ee0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x14000116ee0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x14000116ee0}, 0x140000f0a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d5080?}, {0x1028fc9d0, 0x14000116ee0}, 0x140000f0a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000facf0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:25 server.go:3217: http: panic serving [::1]:57159: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000201140})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a7e0}, {0x0, 0x0}, {0x1400005c9f8?, 0x3, 0x1400005ca08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a7e0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x1028fc9d0?, 0x1400021a7e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a7e0}, 0x14000106d00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002e25a0?}, {0x1028fc9d0, 0x1400021a7e0}, 0x14000106d00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000109050, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:55 server.go:3217: http: panic serving [::1]:57160: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x14000201410})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021a9a0}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021a9a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x1400021a9a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021a9a0}, 0x14000106e00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002e2660?}, {0x1028fc9d0, 0x1400021a9a0}, 0x14000106e00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001090e0, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:55 server.go:3217: http: panic serving [::1]:57163: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140001d5350})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400018b0a0}, {0x0, 0x0}, {0x140000619f8?, 0x3, 0x14000061a08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400018b0a0?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x14000061ad8?, {0x1028fc9d0?, 0x1400018b0a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400018b0a0}, 0x14000106f00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002e2720?}, {0x1028fc9d0, 0x1400018b0a0}, 0x14000106f00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000109170, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:18:55 server.go:3217: http: panic serving [::1]:57164: open app/views/templates/public_nabvar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1028aec40, 0x140002017a0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1028fc9d0?, 0x1400021ab60}, {0x0, 0x0}, {0x1400005f9f8?, 0x3, 0x1400005fa08?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:18 +0x1f4
+todo_app/app/controllers.login({0x1028fc9d0?, 0x1400021ab60?}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_auth.go:31 +0x80
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1028fc9d0?, 0x1400021ab60?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1028fc9d0, 0x1400021ab60}, 0x14000202400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002014d0?}, {0x1028fc9d0, 0x1400021ab60}, 0x14000202400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206990, {0x1028fcc28, 0x1400009b2f0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/06/23 14:43:46 route_auth.go:38: sql: no rows in result set
+2023/06/23 14:43:46 server.go:3217: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:54)
