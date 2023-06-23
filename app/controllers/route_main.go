@@ -6,5 +6,5 @@ import (
 
 // この関数の引数はパターン
 func top(w http.ResponseWriter, r *http.Request) {
-	generateHTML(w, "hello", "layout", "top")
+	generateHTML(w, "hello", "layout", "public_navbar", "top")
 }
