@@ -42,6 +42,8 @@ func StartMainserver() error {
 	http.HandleFunc("/logout", logout)
 	http.HandleFunc("/authenticate", authenticate)
 	http.HandleFunc("/todos", index)
+	http.HandleFunc("/todos/new", todoNew)
+	http.HandleFunc("/todos/save", todoSave)
 	// 第二引数のnilはデフォルトのマルチプレックスを使用することの宣言、基本はデフォルトのマルチプレっクスを使用する
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
