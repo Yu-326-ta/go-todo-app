@@ -64,3 +64,17 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/login", 302)
 	}
 }
+
+func logout(writer http.ResponseWriter, request *http.Request) {
+	cookie, err := request.Cookie("_cookie")
+	if err != nil {
+		log.Println(err)
+	}
+
+	if err != http.ErrNoCookie {
+		// クッキーに保存されているuuidと一致しているセッションの値を削除する（先にuuidが一致するsessionの構造体を作成する）
+		session := models.Session{UUID: cookie.Value}
+		session.DeleteSessionByUUID()
+	}
+	http.Redirect(writer, request, "/login", 302)
+}
