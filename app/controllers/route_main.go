@@ -1,8 +1,10 @@
 package controllers
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+	"todo_app/app/models"
 )
 
 // この関数の引数はパターン
@@ -56,6 +58,51 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 		if err := user.CreateTodo(content); err != nil {
 			log.Println(err)
 
+		}
+		http.Redirect(w, r, "/todos", 302)
+	}
+}
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		err = r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		fmt.Println(t)
+		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
+	}
+}
+
+func todoUpdate(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", 302)
+	} else {
+		err = r.ParseForm()
+		if err != nil {
+			log.Println(err)
+		}
+		user, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		content := r.PostFormValue("content")
+		t := &models.Todo{ID: id, Content: content, UserID: user.ID}
+		if err := t.UpdateTodo(); err != nil {
+			log.Println(err)
 		}
 		http.Redirect(w, r, "/todos", 302)
 	}
