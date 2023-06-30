@@ -69,9 +69,10 @@ func StartMainserver() error {
 	http.HandleFunc("/todos", index)
 	http.HandleFunc("/todos/new", todoNew)
 	http.HandleFunc("/todos/save", todoSave)
-	// パスの最後に/をつけると、パスが完全に一致しなくても処理をハンドラーに渡すことができる
+	// パスの最後に/をつけると、パスが完全に一致しなくても処理をハンドラーに渡すことができる(parseURLもハンドラーとして機能している)
 	http.HandleFunc("/todos/edit/", parseURL(todoEdit))
 	http.HandleFunc("/todos/update/", parseURL(todoUpdate))
+	http.HandleFunc("/todos/delete/", parseURL(todoDelete))
 	// 第二引数のnilはデフォルトのマルチプレックスを使用することの宣言、基本はデフォルトのマルチプレっクスを使用する
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }
