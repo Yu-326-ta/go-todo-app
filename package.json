@@ -1,0 +1,25 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "postcss app/views/css/main.css -o app/views/css/dist.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yu-326-ta/go-todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yu-326-ta/go-todo-app/issues"
+  },
+  "homepage": "https://github.com/Yu-326-ta/go-todo-app#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.2"
+  }
+}
