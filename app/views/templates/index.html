@@ -6,12 +6,14 @@
     >
       {{.Name}}さんのTodoリスト
     </h2>
-    <button
-      onclick="location.href='todos/new'"
-      class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 my-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-    >
-      Create
-    </button>
+    <div class="shadow-xl">
+      <button
+        onclick="location.href='todos/new'"
+        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 my-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        Create
+      </button>
+    </div>
   </div>
 </div>
 {{ range .Todos }}
@@ -19,7 +21,6 @@
   class="flex flex-row container px-3 py-6 my-3 lg:px-8 bg-gray-200 rounded shadow-2xl"
 >
   <div class="basis-1/2">{{ .Content }}</div>
-  <!-- <div class="basis-1/4"><a href="/todos/edit/{{.ID}}">Edit</a></div> -->
   <div class="basis-1/4">
     <button
       onclick="location.href='/todos/edit/{{.ID}}'"
@@ -28,7 +29,6 @@
       Edit
     </button>
   </div>
-  <!-- <div class="basis-1/4"><a href="/todos/delete/{{.ID}}">Delete</a></div> -->
   <div class="basis-1/4">
     <button
       onclick="location.href='/todos/delete/{{.ID}}'"
