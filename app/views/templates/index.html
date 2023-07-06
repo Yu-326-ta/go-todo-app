@@ -1,13 +1,42 @@
 {{ define "content" }}
-UserName:{{.Name}}
-<h1>Sample TodoApp</h1>
-<p>[<a href="todos/new">Create</a>]</p>
-<hr>
-
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+    <h2
+      class="m-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+    >
+      {{.Name}}さんのTodoリスト
+    </h2>
+    <button
+      onclick="location.href='todos/new'"
+      class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 my-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+    >
+      Create
+    </button>
+  </div>
+</div>
 {{ range .Todos }}
-<div>{{ .Content }}</div>
-<p>[<a href="/todos/edit/{{.ID}}">Edit</a>]</p>
-<p>[<a href="/todos/delete/{{.ID}}">Delete</a>]</p>
-<hr>
-{{end}}
-{{end}}
+<div
+  class="flex flex-row container px-3 py-6 my-3 lg:px-8 bg-gray-200 rounded shadow-2xl"
+>
+  <div class="basis-1/2">{{ .Content }}</div>
+  <!-- <div class="basis-1/4"><a href="/todos/edit/{{.ID}}">Edit</a></div> -->
+  <div class="basis-1/4">
+    <button
+      onclick="location.href='/todos/edit/{{.ID}}'"
+      class="bg-green-500 hover:bg-green-400 text-white rounded px-4 py-2"
+    >
+      Edit
+    </button>
+  </div>
+  <!-- <div class="basis-1/4"><a href="/todos/delete/{{.ID}}">Delete</a></div> -->
+  <div class="basis-1/4">
+    <button
+      onclick="location.href='/todos/delete/{{.ID}}'"
+      class="bg-red-700 hover:bg-red-600 text-white rounded px-4 py-2"
+    >
+      Delete
+    </button>
+  </div>
+  <hr />
+</div>
+{{end}} {{end}}
