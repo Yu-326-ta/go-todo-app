@@ -4,6 +4,7 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
+    "dev": "TAILWIND_MODE=watch postcss app/views/css/main.css -o app/views/css/dist.css -w",
     "build": "postcss app/views/css/main.css -o app/views/css/dist.css"
   },
   "repository": {

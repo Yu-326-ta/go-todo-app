@@ -535,3 +535,949 @@ created by net/http.(*Server).Serve
 	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
 2023/06/23 14:43:46 route_auth.go:38: sql: no rows in result set
 2023/06/23 14:43:46 server.go:3217: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:54)
+2023/07/05 23:12:58 server.go:3217: http: panic serving [::1]:54111: template: index.html:38: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x1400023ad50})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x140000c87e0}, {0x104f5bea0, 0x140000d1180}, {0x1400029d878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x140000c87e0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400029dad8?, {0x104f79370?, 0x140000c87e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x140000c87e0}, 0x140000aad00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400009c030?}, {0x104f79370, 0x140000c87e0}, 0x140000aad00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000172090, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:58 server.go:3217: http: panic serving [::1]:54112: template: index.html:38: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x1400031a510})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x1400031e0e0}, {0x104f5bea0, 0x14000334380}, {0x14000357878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x1400031e0e0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x104f79370?, 0x1400031e0e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x1400031e0e0}, 0x14000168200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115530?}, {0x104f79370, 0x1400031e0e0}, 0x14000168200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000172120, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:58 server.go:3217: http: panic serving [::1]:54115: template: index.html:38: unexpected EOF
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x1400023b0c0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x140000c89a0}, {0x104f5bea0, 0x140000d1600}, {0x14000135878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x140000c89a0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x104f79370?, 0x140000c89a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x140000c89a0}, 0x14000302200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000301170?}, {0x104f79370, 0x140000c89a0}, 0x14000302200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140003061b0, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:58 server.go:3217: http: panic serving [::1]:54116: template: index.html:38: unexpected EOF
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x14000113860})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x14000284460}, {0x104f5bea0, 0x14000165800}, {0x14000133878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x14000284460}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x104f79370?, 0x14000284460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x14000284460}, 0x14000168b00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000115da0?}, {0x104f79370, 0x14000284460}, 0x14000168b00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000ae900, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:59 server.go:3217: http: panic serving [::1]:54117: template: index.html:38: unexpected EOF
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x14000113bd0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x14000284620}, {0x104f5bea0, 0x14000165c80}, {0x14000133878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x14000284620}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x104f79370?, 0x14000284620?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x14000284620}, 0x140000aae00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000276810?}, {0x104f79370, 0x14000284620}, 0x140000aae00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000ae990, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:59 server.go:3217: http: panic serving [::1]:54118: template: index.html:38: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x14000113f40})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x140002847e0}, {0x104f5bea0, 0x140002dc180}, {0x14000133878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x140002847e0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000095ad8?, {0x104f79370?, 0x140002847e0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x140002847e0}, 0x140000aaf00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002768d0?}, {0x104f79370, 0x140002847e0}, 0x140000aaf00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000aea20, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:12:59 server.go:3217: http: panic serving [::1]:54119: template: index.html:38: unexpected EOF
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f181c0, 0x140002f42c0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104f79370?, 0x140002849a0}, {0x104f5bea0, 0x140002dc600}, {0x14000133878?, 0x3, 0x104f1f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104f79370, 0x140002849a0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000095ad8?, {0x104f79370?, 0x140002849a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104f79370, 0x140002849a0}, 0x14000168c00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002a5e90?}, {0x104f79370, 0x140002849a0}, 0x14000168c00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000172990, {0x104f795c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:06 server.go:3217: http: panic serving [::1]:54129: template: index.html:38: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000012380})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x14000216000}, {0x104fa7ea0, 0x1400021e200}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x14000216000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000133ad8?, {0x104fc5370?, 0x14000216000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x14000216000}, 0x14000204000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007c030?}, {0x104fc5370, 0x14000216000}, 0x14000204000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a090, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:07 server.go:3217: http: panic serving [::1]:54130: template: index.html:38: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000090370})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b2000}, {0x104fa7ea0, 0x140000c2200}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b2000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x104fc5370?, 0x140000b2000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b2000}, 0x14000168200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000113530?}, {0x104fc5370, 0x140000b2000}, 0x14000168200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a120, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:07 server.go:3217: http: panic serving [::1]:54131: template: index.html:38: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x140000906e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b21c0}, {0x104fa7ea0, 0x140000c2680}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b21c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x104fc5370?, 0x140000b21c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b21c0}, 0x14000168300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000113620?}, {0x104fc5370, 0x140000b21c0}, 0x14000168300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a1b0, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:07 server.go:3217: http: panic serving [::1]:54132: template: index.html:38: unexpected EOF
+goroutine 4 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000012700})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140002162a0}, {0x104fa7ea0, 0x1400021e700}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140002162a0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x140002162a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140002162a0}, 0x14000204100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007cbd0?}, {0x104fc5370, 0x140002162a0}, 0x14000204100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206120, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:09 server.go:3217: http: panic serving [::1]:54133: template: index.html:38: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000012a80})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x14000216460}, {0x104fa7ea0, 0x1400021eb80}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x14000216460}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x14000216460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x14000216460}, 0x14000204200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400007d710?}, {0x104fc5370, 0x14000216460}, 0x14000204200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002062d0, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:10 server.go:3217: http: panic serving [::1]:54134: template: index.html:38: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000090a60})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b2380}, {0x104fa7ea0, 0x140000c2c00}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b2380}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x104fc5370?, 0x140000b2380?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b2380}, 0x14000280000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140000a1620?}, {0x104fc5370, 0x140000b2380}, 0x14000280000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400009c240, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:10 server.go:3217: http: panic serving [::1]:54135: template: index.html:38: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x140001114d0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e000}, {0x104fa7ea0, 0x14000164700}, {0x14000139878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x1400018e000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e000}, 0x14000204300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000272270?}, {0x104fc5370, 0x1400018e000}, 0x14000204300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206480, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:10 server.go:3217: http: panic serving [::1]:54136: template: index.html:38: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000012e10})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x14000216620}, {0x104fa7ea0, 0x1400021f080}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x14000216620}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x104fc5370?, 0x14000216620?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x14000216620}, 0x14000204400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000272330?}, {0x104fc5370, 0x14000216620}, 0x14000204400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206510, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:11 server.go:3217: http: panic serving [::1]:54137: template: index.html:38: unexpected EOF
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000090dd0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b2540}, {0x104fa7ea0, 0x140000c3000}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b2540}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x104fc5370?, 0x140000b2540?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b2540}, 0x14000204500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000272e70?}, {0x104fc5370, 0x140000b2540}, 0x14000204500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002066c0, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:16 server.go:3217: http: panic serving [::1]:54138: template: index.html:38: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000091140})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b2700}, {0x104fa7ea0, 0x140000c3400}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b2700}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000061ad8?, {0x104fc5370?, 0x140000b2700?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b2700}, 0x14000204600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000272f30?}, {0x104fc5370, 0x140000b2700}, 0x14000204600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206750, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:16 server.go:3217: http: panic serving [::1]:54139: template: index.html:38: unexpected EOF
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x140000914b0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140000b28c0}, {0x104fa7ea0, 0x140000c3800}, {0x140000bf878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140000b28c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000324ad8?, {0x104fc5370?, 0x140000b28c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140000b28c0}, 0x14000204700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000273020?}, {0x104fc5370, 0x140000b28c0}, 0x14000204700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140002067e0, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:16 server.go:3217: http: panic serving [::1]:54140: template: index.html:38: unexpected EOF
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000111850})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e1c0}, {0x104fa7ea0, 0x14000164b80}, {0x14000139878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e1c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x1400018e1c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e1c0}, 0x14000168400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001a01b0?}, {0x104fc5370, 0x1400018e1c0}, 0x14000168400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a360, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:19 server.go:3217: http: panic serving [::1]:54141: template: index.html:38: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000111bd0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e380}, {0x104fa7ea0, 0x14000165000}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e380}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000133ad8?, {0x104fc5370?, 0x1400018e380?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e380}, 0x14000168600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002730e0?}, {0x104fc5370, 0x1400018e380}, 0x14000168600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000206870, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:19 server.go:3217: http: panic serving [::1]:54142: template: index.html:38: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000111f40})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e540}, {0x104fa7ea0, 0x14000165480}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e540}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x1400018e540?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e540}, 0x14000168500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001a0cf0?}, {0x104fc5370, 0x1400018e540}, 0x14000168500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a510, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:19 server.go:3217: http: panic serving [::1]:54143: template: index.html:38: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x140001f62c0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e700}, {0x104fa7ea0, 0x14000165a00}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e700}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x1400018e700?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e700}, 0x14000168700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001e2330?}, {0x104fc5370, 0x1400018e700}, 0x14000168700)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a750, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:20 server.go:3217: http: panic serving [::1]:54144: template: index.html:38: unexpected EOF
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000013290})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x140002168c0}, {0x104fa7ea0, 0x1400021f700}, {0x14000135878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x140002168c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000325ad8?, {0x104fc5370?, 0x140002168c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x140002168c0}, 0x14000204a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000273290?}, {0x104fc5370, 0x140002168c0}, 0x14000204a00)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a900, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:25 server.go:3217: http: panic serving [::1]:54145: template: index.html:38: unexpected EOF
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000013600})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x14000216a80}, {0x104fa7ea0, 0x1400021fb80}, {0x14000135878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x14000216a80}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x104fc5370?, 0x14000216a80?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x14000216a80}, 0x14000168800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001e2ed0?}, {0x104fc5370, 0x14000216a80}, 0x14000168800)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017a990, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:25 server.go:3217: http: panic serving [::1]:54147: template: index.html:38: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x14000013970})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x14000216c40}, {0x104fa7ea0, 0x1400035c080}, {0x14000135878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x14000216c40}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000324ad8?, {0x104fc5370?, 0x14000216c40?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x14000216c40}, 0x14000280100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002c4120?}, {0x104fc5370, 0x14000216c40}, 0x14000280100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400009c750, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:13:25 server.go:3217: http: panic serving [::1]:54148: template: index.html:38: unexpected EOF
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x104f641c0, 0x140001f6650})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x104fc5370?, 0x1400018e8c0}, {0x104fa7ea0, 0x14000165f80}, {0x14000133878?, 0x3, 0x104f6b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x104fc5370, 0x1400018e8c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005cad8?, {0x104fc5370?, 0x1400018e8c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x104fc5370, 0x1400018e8c0}, 0x14000168900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001e2f90?}, {0x104fc5370, 0x1400018e8c0}, 0x14000168900)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x1400017aa20, {0x104fc55c8, 0x140001133e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:18 server.go:3217: http: panic serving [::1]:54273: template: index.html:13: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1007941c0, 0x140001134d0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1007f5370?, 0x14000284000}, {0x1007d7ea0, 0x14000164680}, {0x14000139878?, 0x3, 0x10079b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x1007f5370, 0x14000284000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x1007f5370?, 0x14000284000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1007f5370, 0x14000284000}, 0x14000168300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001155c0?}, {0x1007f5370, 0x14000284000}, 0x14000168300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000184240, {0x1007f55c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:19 server.go:3217: http: panic serving [::1]:54274: template: index.html:13: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1007941c0, 0x14000113840})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1007f5370?, 0x140002841c0}, {0x1007d7ea0, 0x14000164b80}, {0x14000139878?, 0x3, 0x10079b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x1007f5370, 0x140002841c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x1007f5370?, 0x140002841c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1007f5370, 0x140002841c0}, 0x14000182400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002592f0?}, {0x1007f5370, 0x140002841c0}, 0x14000182400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001842d0, {0x1007f55c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:19 server.go:3217: http: panic serving [::1]:54276: template: index.html:13: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1007941c0, 0x14000113bb0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1007f5370?, 0x14000284380}, {0x1007d7ea0, 0x14000165080}, {0x14000139878?, 0x3, 0x10079b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x1007f5370, 0x14000284380}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x1007f5370?, 0x14000284380?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1007f5370, 0x14000284380}, 0x14000182500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140002593b0?}, {0x1007f5370, 0x14000284380}, 0x14000182500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000184360, {0x1007f55c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:19 server.go:3217: http: panic serving [::1]:54277: template: index.html:13: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1007941c0, 0x1400009c6c0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x1007f5370?, 0x140000c41c0}, {0x1007d7ea0, 0x140000ce680}, {0x14000133878?, 0x3, 0x10079b120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x1007f5370, 0x140000c41c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000092ad8?, {0x1007f5370?, 0x140000c41c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1007f5370, 0x140000c41c0}, 0x140000a4200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000098c60?}, {0x1007f5370, 0x140000c41c0}, 0x140000a4200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a8120, {0x1007f55c8, 0x140001153e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:33 server.go:3217: http: panic serving [::1]:54297: template: index.html:13: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x14000098360})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x140000bc000}, {0x1030ebea0, 0x140000c6200}, {0x14000119878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x140000bc000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000119ad8?, {0x103109370?, 0x140000bc000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x140000bc000}, 0x1400009e000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x103109370, 0x140000bc000}, 0x1400009e000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000150090, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:34 server.go:3217: http: panic serving [::1]:54298: template: index.html:13: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x140000986e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x140000bc2a0}, {0x1030ebea0, 0x140000c6700}, {0x14000119878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x140000bc2a0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x103109370?, 0x140000bc2a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x140000bc2a0}, 0x14000148200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400010b530?}, {0x103109370, 0x140000bc2a0}, 0x14000148200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000150120, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:34 server.go:3217: http: panic serving [::1]:54299: template: index.html:13: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x14000098a50})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x140000bc460}, {0x1030ebea0, 0x140000c6b80}, {0x14000119878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x140000bc460}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x103109370?, 0x140000bc460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x140000bc460}, 0x1400009e200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094bd0?}, {0x103109370, 0x140000bc460}, 0x1400009e200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a2120, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:34 server.go:3217: http: panic serving [::1]:54300: template: index.html:13: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x14000013510})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x1400015e000}, {0x1030ebea0, 0x14000146700}, {0x1400011f878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x1400015e000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x103109370?, 0x1400015e000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x1400015e000}, 0x14000148300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400010b620?}, {0x103109370, 0x1400015e000}, 0x14000148300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001501b0, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:35 server.go:3217: http: panic serving [::1]:54301: template: index.html:13: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x1400021a360})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x14000236000}, {0x1030ebea0, 0x14000202280}, {0x14000241878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x14000236000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000212ad8?, {0x103109370?, 0x14000236000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x14000236000}, 0x14000222000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000204090?}, {0x103109370, 0x14000236000}, 0x14000222000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000208000, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:40 server.go:3217: http: panic serving [::1]:54302: template: index.html:13: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x1400021a6d0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x140002361c0}, {0x1030ebea0, 0x14000202700}, {0x14000241878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x140002361c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x103109370?, 0x140002361c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x140002361c0}, 0x1400009e500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140000fe240?}, {0x103109370, 0x140002361c0}, 0x1400009e500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a23f0, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:40 server.go:3217: http: panic serving [::1]:54303: template: index.html:13: unexpected EOF
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x1400021aa40})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x14000236380}, {0x1030ebea0, 0x14000202c00}, {0x14000241878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x14000236380}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x103109370?, 0x14000236380?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x14000236380}, 0x14000148500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400016a180?}, {0x103109370, 0x14000236380}, 0x14000148500)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000150360, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:29:40 server.go:3217: http: panic serving [::1]:54304: template: index.html:13: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x1030a81c0, 0x14000098de0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x103109370?, 0x140000bc620}, {0x1030ebea0, 0x140000c7180}, {0x14000119878?, 0x3, 0x1030af120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x103109370, 0x140000bc620}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x103109370?, 0x140000bc620?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x103109370, 0x140000bc620}, 0x1400009e600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140000fe300?}, {0x103109370, 0x140000bc620}, 0x1400009e600)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a2480, {0x1031095c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:30:08 server.go:3217: http: panic serving [::1]:54308: template: index.html:15: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x100a581c0, 0x14000098360})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x100ab9370?, 0x140000bc000}, {0x100a9bea0, 0x140000c6200}, {0x14000119878?, 0x3, 0x100a5f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x100ab9370, 0x140000bc000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000119ad8?, {0x100ab9370?, 0x140000bc000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ab9370, 0x140000bc000}, 0x1400009e000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x100ab9370, 0x140000bc000}, 0x1400009e000)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000150090, {0x100ab95c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:30:10 server.go:3217: http: panic serving [::1]:54309: template: index.html:15: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x100a581c0, 0x140000986d0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x100ab9370?, 0x140000bc2a0}, {0x100a9bea0, 0x140000c6700}, {0x14000119878?, 0x3, 0x100a5f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x100ab9370, 0x140000bc2a0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x1400005fad8?, {0x100ab9370?, 0x140000bc2a0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ab9370, 0x140000bc2a0}, 0x14000146200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400010b530?}, {0x100ab9370, 0x140000bc2a0}, 0x14000146200)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000150120, {0x100ab95c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:30:10 server.go:3217: http: panic serving [::1]:54310: template: index.html:15: unexpected EOF
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x100a581c0, 0x14000098a40})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x100ab9370?, 0x140000bc460}, {0x100a9bea0, 0x140000c6c00}, {0x14000119878?, 0x3, 0x100a5f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x100ab9370, 0x140000bc460}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x100ab9370?, 0x140000bc460?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ab9370, 0x140000bc460}, 0x14000146300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x1400010b620?}, {0x100ab9370, 0x140000bc460}, 0x14000146300)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140001501b0, {0x100ab95c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:30:10 server.go:3217: http: panic serving [::1]:54311: template: index.html:15: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x100a581c0, 0x1400021c350})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x100ab9370?, 0x14000220000}, {0x100a9bea0, 0x1400023e200}, {0x14000239878?, 0x3, 0x100a5f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x100ab9370, 0x14000220000}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x100ab9370?, 0x14000220000?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ab9370, 0x14000220000}, 0x1400009e400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x140001a0180?}, {0x100ab9370, 0x14000220000}, 0x1400009e400)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x140000a2360, {0x100ab95c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
+2023/07/05 23:30:40 server.go:3217: http: panic serving [::1]:54314: template: index.html:15: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1854 +0xb0
+panic({0x100a581c0, 0x1400021c6e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/runtime/panic.go:890 +0x258
+text/template.Must(...)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/text/template/helper.go:26
+todo_app/app/controllers.generateHTML({0x100ab9370?, 0x140002201c0}, {0x100a9bea0, 0x1400023e700}, {0x14000239878?, 0x3, 0x100a5f120?})
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/server.go:21 +0x1f4
+todo_app/app/controllers.index({0x100ab9370, 0x140002201c0}, 0x3b?)
+	/Users/yoshinagayuta/go/1.20.4/src/todo_app/app/controllers/route_main.go:31 +0x1e0
+net/http.HandlerFunc.ServeHTTP(0x14000060ad8?, {0x100ab9370?, 0x140002201c0?}, 0x10?)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2122 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x100ab9370, 0x140002201c0}, 0x14000204100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2500 +0x140
+net/http.serverHandler.ServeHTTP({0x14000206b10?}, {0x100ab9370, 0x140002201c0}, 0x14000204100)
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:2936 +0x2d8
+net/http.(*conn).serve(0x14000202120, {0x100ab95c8, 0x1400010b3e0})
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:1995 +0x560
+created by net/http.(*Server).Serve
+	/Users/yoshinagayuta/.goenv/versions/1.20.4/src/net/http/server.go:3089 +0x520
